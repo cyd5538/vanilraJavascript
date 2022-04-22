@@ -1,0 +1,164 @@
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.grid-container {
+    display: grid;
+    gap: 30px;
+
+    padding: 20px;
+    width: 95%;
+    height: 100vh;
+}
+
+
+.grid-item {
+    background: #9F98E8;
+    background: -moz-linear-gradient(-45deg, #9F98E8 0%, #AFF6CF 100%);
+    background: -webkit-linear-gradient(-45deg, #9F98E8 0%, #AFF6CF 100%);
+    background: linear-gradient(135deg, #9F98E8 0%, #AFF6CF 100%);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 5px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 5px 5px rgba(0,0,0,0);
+}
+
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    -webkit-border-radius: 40px 0px 0px 0px;
+    -moz-border-radius: 40px 0px 0px 0px;
+    border-radius: 40px 0px 0px 0px;
+    border: 1px solid #000;
+}
+
+.item2 {
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    -webkit-border-radius: 0px 40px 40px 0px;
+    -moz-border-radius: 0px 40px 40px 0px;
+    border-radius: 0px 40px 40px 0px;
+}
+
+#todo-form input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    -webkit-border-radius: 0px 20px 0px 0px;
+    -moz-border-radius: 0px 20px 0px 0px;
+    border-radius: 0px 20px 0px 0px;
+}
+
+#todo-list li {
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 1px dotted #000;
+}
+#todo-list li button{
+    background: transparent;
+    border: none;
+}
+.item5 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    -webkit-border-radius: 0px 0px 0px 40px;
+    -moz-border-radius: 0px 0px 0px 40px;
+    border-radius: 0px 0px 0px 40px;
+}
+
+#bgDiv {
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock, #clock1, #clock2 {
+margin-right: 1rem;
+color: white;
+text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+#weather {
+    font-weight: bold;
+}
+
+.item3 {
+    display: flex;
+    flex-direction: column;
+}
+
+#quote {
+    flex: 1;
+    border-bottom: 1px solid green;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+
+#quote span:last-child {
+    font-weight: bold;
+    padding-top: 1rem;
+
+}
+
+.bookmark {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.bookmark_title {
+    flex: 0.2;
+    font-weight: bold;
+    color: #005900;
+
+    text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px;
+}
+
+.bookmark_link {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.bookmark_link a:hover {
+    transform: scale(1.5);
+    transform: rotate(30deg);
+    transition: all ease-in-out 0.3s;}
+
+#todolist {
+    font-size: 2rem;
+    color: #444444;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}

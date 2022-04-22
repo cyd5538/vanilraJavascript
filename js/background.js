@@ -1,9 +1,7 @@
-const images = ["bg1.jpg", "bg2.jpg", "bg3.jpg"];
+const images = ["bgi1.jpg", "bgi2.jpg", "bgi3.jpg", "bgi4.jpg", "bgi5.jpg"];
+const background_img = "./img/"; 
+const bgDiv = document.querySelector('#bgDiv');
 
 const choseImage = images[Math.floor(Math.random() * images.length)];
-
-const bgImage = document.createElement("img");
-
-bgImage.src = `img/${choseImage}`;
-
-document.body.appendChild(bgImage)
+const a = bgDiv.style.backgroundImage = "url('" + background_img +  choseImage + "')";
+console.log(a);

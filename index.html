@@ -2,29 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>바닐라 자바스크립트</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>바닐라 자바스크립트</title>
 </head>
 
 <body>
-    <form id="login-form" class="hidden">
+  <div class="grid-container">
+    <div id="bgDiv" class="grid-item item1">
+      <h2 id="clock"></h2>
+      <h2 id="clock1"></h2>
+      <h2 id="clock2"></h2>
+    </div>
+    <div class="grid-item item2">
+      <h1 id="todolist">To Do List</h1>
+      <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <div class="grid-item item3">
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="bookmark">
+        <div class="bookmark_title">
+          bookmark
+        </div>
+        <div class="bookmark_link">
+          <a href="https://www.facebook.com/"><img src="./img/face.png" alt=""></a>
+          <a href="https://www.instagram.com/"><img src="./img/insta.png" alt=""></a>
+          <a href="https://twitter.com/"><img src="./img/twi.png" alt=""></a>
+          <a href="https://www.youtube.com/"><img src="./img/you.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item item4">
+      <form id="login-form" class="hidden">
         <input type="text" maxlength="15" required placeholder="What is your name?" />
         <input type="submit" value="Log In" />
-    </form>
-    <h2 id="clock">00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <div id="quote">
-        <span></span>
-        <span></span>
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
     </div>
-    
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
+
+    <div class="grid-item item5">
+      <div id="weather">
+        <span></span>
+        <span></span>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/greeting.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
 </body>
 
 </html>
