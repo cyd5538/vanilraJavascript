@@ -1,7 +1,3 @@
-.hidden {
-    display: none;
-}
-
 h1 {
     font-size: 3rem;
 }
@@ -16,13 +12,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(255,0,19);
+    background: linear-gradient(47deg, rgba(255,0,19,1) 0%, rgba(255,177,31,1) 18%, rgba(245,255,75,1) 35%, rgba(49,103,18,1) 51%, rgba(10,73,255,1) 64%, rgba(103,42,210,1) 78%, rgba(26,5,62,1) 88%);
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+}
 
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .grid-container {
     display: grid;
-    gap: 30px;
-
+    gap: 20px;
     padding: 20px;
     width: 95%;
     height: 100vh;
@@ -30,16 +44,16 @@ body {
 
 
 .grid-item {
-    background: #9F98E8;
-    background: -moz-linear-gradient(-45deg, #9F98E8 0%, #AFF6CF 100%);
-    background: -webkit-linear-gradient(-45deg, #9F98E8 0%, #AFF6CF 100%);
-    background: linear-gradient(135deg, #9F98E8 0%, #AFF6CF 100%);
+    background: rgba(244, 243, 243, 1);
     text-align: center;
     padding: 20px;
     font-size: 30px;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 5px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 5px 5px rgba(0,0,0,0);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 5px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 5px 5px rgba(0, 0, 0, 0);
 }
+
+
+
 
 .item1 {
     grid-column: 1 / span 2;
@@ -51,41 +65,67 @@ body {
 }
 
 .item2 {
+    border: 5px solid #000;
     grid-column: 3;
     grid-row: 1 / span 3;
     -webkit-border-radius: 0px 40px 40px 0px;
     -moz-border-radius: 0px 40px 40px 0px;
     border-radius: 0px 40px 40px 0px;
+    background-image: linear-gradient(#000000 0.5px, transparent 0.5px), linear-gradient(to right, #000000 0.5px, transparent 0.5px);
+    background-size: 38px 38px;
+    background-color: #d8e4fc;
 }
 
+
+
+
 #todo-form input {
+    margin-top: 10px;
     width: 100%;
     height: 50px;
-    border: 1px solid white;
-    background-color: transparent;
+    border: 3px solid rgb(240, 223, 223);
+    color: white;
+    background-color: rgb(110, 139, 232);
     -webkit-border-radius: 0px 20px 0px 0px;
     -moz-border-radius: 0px 20px 0px 0px;
     border-radius: 0px 20px 0px 0px;
 }
 
+
 #todo-list li {
+    -webkit-border-radius: 0px 20px 0px 0px;
+    -moz-border-radius: 0px 20px 0px 0px;
+    border-radius: 0px 20px 0px 0px;
+    margin-top: 1rem;
     font-size: 1rem;
+    font-weight: bold;
     list-style: none;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    border-top: 1px dotted #000;
+    background-color: rgb(245, 240, 240, 0.8);
+    border: 3px solid rgb(0, 0, 0);
+
 }
-#todo-list li button{
+
+#todo-list li button {
     background: transparent;
     border: none;
 }
+
+
+
 .item5 {
     grid-column: 1 / span 2;
     grid-row: 3;
     -webkit-border-radius: 0px 0px 0px 40px;
     -moz-border-radius: 0px 0px 0px 40px;
     border-radius: 0px 0px 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, transparent 20%, #9f9fe6 20%, #9f9fe6 80%, transparent 80%, transparent) 0% 0% / 76px 76px, radial-gradient(circle, transparent 20%, #9f9fe6 20%, #9f9fe6 80%, transparent 80%, transparent) 38px 38px / 76px 76px, linear-gradient(#ffffff 2px, transparent 2px) 0px -1px / 38px 38px, linear-gradient(90deg, #ffffff 2px, #9f9fe6 2px) -1px 0px / 38px 38px #9f9fe6;
+    background-color: #525277;
 }
 
 #bgDiv {
@@ -96,30 +136,57 @@ body {
     align-items: center;
 }
 
-#clock, #clock1, #clock2 {
-margin-right: 1rem;
-color: white;
-text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+#clock,
+#clock1,
+#clock2 {
+    font-size: 5rem;
+    margin-right: 1rem;
+    color: white;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
 }
 
 #weather {
     font-weight: bold;
 }
 
+#weather span:first-child {
+    font-size: 3rem;
+    padding: 1rem;
+    color: #444444;
+    background: #FFFFFF;
+    border-radius: 20px;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+#weather span:last-child {
+    font-size: 3rem;
+    padding: 1rem;
+    color: #444444;
+    background: #FFFFFF;
+    border-radius: 20px;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
 .item3 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(47deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 74%, rgba(0, 212, 255, 1) 100%);
 }
 
 #quote {
+    width: 500px;
+
     flex: 1;
     border-bottom: 1px solid green;
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     color: #000000;
-
-    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    font-weight: bold;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
 }
 
 #quote span:last-child {
@@ -130,7 +197,9 @@ text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2p
 
 .bookmark {
     padding-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+
+    width: 90%;
     flex: 1;
     display: flex;
     align-items: center;
@@ -140,7 +209,6 @@ text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2p
     flex: 0.2;
     font-weight: bold;
     color: #005900;
-
     text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px;
 }
 
@@ -151,14 +219,101 @@ text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2p
 
 }
 
+.bookmark_link a {
+    display: inline-block;
+
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+    border: 3px solid rgb(249, 240, 240);
+    border-radius: 4px;
+}
+
 
 .bookmark_link a:hover {
-    transform: scale(1.5);
-    transform: rotate(30deg);
-    transition: all ease-in-out 0.3s;}
+    transform: scale(1.2);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 5px 5px rgba(0, 0, 0, 0);
+    transition: all ease-in-out 0.3s;
+}
 
 #todolist {
     font-size: 2rem;
     color: #444444;
     text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+#todo-list li {
+    font-size: 1.3rem;
+}
+
+#icon {
+    width: 200px;
+}
+
+
+
+::placeholder {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#greeting {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #444444;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+.hidden {
+    display: none;
+}
+
+.item4 {
+    position: relative;
+    background: rgb(0, 212, 255);
+    background: linear-gradient(47deg, rgba(0, 212, 255, 1) 0%, rgba(255, 255, 255, 1) 45%);
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form input:first-child {
+
+    width: 150px;
+    height: 50px;
+}
+
+.login-form input:last-child {
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.login-form input:last-child:hover {
+    background: rgb(33, 31, 31);
+    border: 1px solid #23d5ab
+}
+
+#clearbtn {
+    position: relative;
+    top: -50px;
+    width: 200px;
+    height: 50px;
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
 }

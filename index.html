@@ -34,29 +34,38 @@
           bookmark
         </div>
         <div class="bookmark_link">
-          <a href="https://www.facebook.com/"><img src="./img/face.png" alt=""></a>
-          <a href="https://www.instagram.com/"><img src="./img/insta.png" alt=""></a>
-          <a href="https://twitter.com/"><img src="./img/twi.png" alt=""></a>
-          <a href="https://www.youtube.com/"><img src="./img/you.png" alt=""></a>
+
+          <a href="https://www.naver.com/"><img src="./img/naver.png" alt="naver"></a>
+          <a href="https://www.facebook.com/"><img src="./img/face.png" alt="face"></a>
+          <a href="https://www.instagram.com/"><img src="./img/insta.png" alt="insta"></a>
+          <a href="https://twitter.com/"><img src="./img/twi.png" alt="twi"></a>
+          <a href="https://www.youtube.com/"><img src="./img/you.png" alt="you"></a>
         </div>
       </div>
     </div>
 
     <div class="grid-item item4">
-      <form id="login-form" class="hidden">
-        <input type="text" maxlength="15" required placeholder="What is your name?" />
+      <form class="hidden login-form" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
         <input type="submit" value="Log In" />
       </form>
-      <h1 id="greeting" class="hidden"></h1>
+      <h1 class="hidden" id="greeting"></h1>
+      <button class="hidden" id="clearbtn">Log out</button>
     </div>
 
     <div class="grid-item item5">
       <div id="weather">
         <span></span>
         <span></span>
-
       </div>
+      <img id="icon" />
     </div>
+
   </div>
 
 
