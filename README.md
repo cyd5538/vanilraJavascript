@@ -15,3 +15,4 @@
 + 2.css generator를 이용하여 trasnform gradient, 패턴, 텍스트쉐도우,쉐도우 사용
 
 
+![image](https://user-images.githubusercontent.com/91642972/164974443-82d5fe76-c2f3-4769-82d5-cada42c9c8da.png)
